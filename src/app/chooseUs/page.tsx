@@ -1,26 +1,26 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Contact from "@/components/Contact";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page || Zamanat Pvt ",
-  description: "This is About Page for Zamanat Pvt. Ltd",
+  title: "Our Zone | Zamamanat Tech Solution",
+  description: "This is Contact Page for Startup Nextjs Template",
   // other metadata
 };
 
-const AboutPage = () => {
+const ContactPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
+        pageName="Our Edge"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
       />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+<h1 className="text-center text-3xl font-bold">Our Edge Page</h1>
+
+
     </>
   );
 };
 
-export default AboutPage;
+export default ContactPage;
