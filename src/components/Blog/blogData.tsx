@@ -17,7 +17,7 @@ const blogData: Blog[] = [
   },
   {
     id: 2,
-    title: "Mobile App Development Portfolio",
+    title: " App Development Portfolio",
     paragraph:
       "We develop custom mobile apps for iOS and Android, offering both native and cross-platform solutions for e-commerce, business productivity, and consumer apps, built with technologies like React Native and Swift.",
     image: "/images/blog/blog-02.jpg",
@@ -31,7 +31,7 @@ const blogData: Blog[] = [
   },
   {
     id: 3,
-    title: "Software Development & Automation Portfolio",
+    title: "Tech Solutions Portfolio",
     paragraph:
       "Zamanat InfoTech delivers custom software, ERP systems, and automation solutions that streamline business processes and enhance efficiency, utilizing technologies like Java, Python, and cloud platforms.",
     image: "/images/blog/blog-03.jpg",
