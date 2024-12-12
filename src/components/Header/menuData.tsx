@@ -33,7 +33,7 @@ const menuData: Menu[] = [
       {
         id: 41,
         title: "Custom Website Design",
-        path: "/about",
+        path: "/websiteDesignpage",
         newTab: false,
       },
       {
