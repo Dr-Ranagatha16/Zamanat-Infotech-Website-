@@ -1,7 +1,7 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <section className="py-16 md:py-20 lg:py-28">
+      <section className="mt-10 py-16 md:py-20 lg:py-28">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             
@@ -35,13 +35,16 @@ const AboutPage = () => {
 
             {/* Right Side - Image Content */}
             <div className="w-full px-4 lg:w-1/2">
-  <div className="relative aspect-w-16 aspect-h-9">
-    <img 
-      src="/images/about/ui-ux-representations-with-laptop.jpg" 
-      alt="Custom Web Design" 
-    />
-  </div>
-</div>
+              <div className="xl:border xl:border-gray-300 rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/about/ui-ux-representations-with-laptop.jpg"
+                  alt="Custom Web Design"
+                  width={800} // Adjust width as per your image
+                  height={500} // Adjust height as per your image
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
 
           </div>
         </div>
