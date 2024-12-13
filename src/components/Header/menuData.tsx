@@ -51,7 +51,7 @@ const menuData: Menu[] = [
       {
         id: 44,
         title: "Content Management Systems (CMS)",
-        path: "/blog-sidebar",
+        path: "/CMS",
         newTab: false,
       },
       {
