@@ -1,5 +1,6 @@
 import { Brand } from "@/types/brand";
 
+// Our Clients
 const brandsData: Brand[] = [
   {
     id: 6,

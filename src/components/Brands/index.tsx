@@ -5,6 +5,7 @@ import brandsData from "./brandsData";
 const Brands = () => {
   return (
     <section className="pt-16">
+       <h1 style={styles.heading}>Our Clients</h1> {/* Centered and larger font */}
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -38,4 +39,19 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
       </a>
     </div>
   );
+};
+const styles = {
+  section: {
+    display: 'flex',
+    flexDirection: 'column', // Ensure elements are stacked vertically
+    alignItems: 'center', // Center children horizontally
+    justifyContent: 'center', // Center children vertically
+    minHeight: '100vh', // Full screen height
+    textAlign: 'center', // Center text within each child
+  },
+  heading: {
+    fontSize: '3rem', // Increase font size
+    fontWeight: 'bold',
+    marginBottom: '2rem', // Add some space below the heading
+  },
 };

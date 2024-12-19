@@ -1,6 +1,6 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
-
+import OurEdge from "@/app/ourEdge/page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,6 +17,7 @@ const ContactPage = () => {
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
       />
 <h1 className="text-center text-3xl font-bold">Our Edge Page</h1>
+    <OurEdge />
 
 
     </>

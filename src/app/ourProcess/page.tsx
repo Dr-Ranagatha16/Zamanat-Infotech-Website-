@@ -13,7 +13,7 @@ type CardProps = {
 const Card = ({ imageSrc, altText, title, description }: CardProps) => {
   return (
     <MagicCard className="w-full h-full" gradientSize={200} gradientColor="#4563E2" gradientOpacity={0.5}>
-      <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-900 dark:border-gray-700">
+      <div className="h-full bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-900 dark:border-gray-700 flex flex-col">
           <Image
             className="rounded-t-lg"
             src={imageSrc}
@@ -23,13 +23,13 @@ const Card = ({ imageSrc, altText, title, description }: CardProps) => {
             layout="responsive"
           />
 
-        <div className="p-5">
+        <div className="p-5 flex flex-col flex-grow">
 
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
               {title}
             </h5>
   
-          <p className="mb-3 font-normal text-gray-400">{description}</p>
+          <p className="mb-3 font-normal text-gray-400 flex-grow">{description}</p>
         </div>
       </div>
     </MagicCard>
